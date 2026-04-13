@@ -1,0 +1,57 @@
+{
+  "name": "github-repos",
+  "displayName": "GitHub Repos",
+  "description": "Browse GitHub repositories without leaving VS Code",
+  "version": "1.0.0",
+  "publisher": "moscovium-mc",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:githubRepos",
+    "onCommand:github-repos.open"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "github-repos.open",
+        "title": "Open GitHub Repos"
+      }
+    ],
+    "viewContainers": {
+      "activitybar": [
+        {
+          "id": "githubReposView",
+          "title": "GitHub Repos",
+          "icon": "icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "githubReposView": [
+        {
+          "id": "githubRepos",
+          "name": "GitHub Repos"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "github-repos.open",
+          "when": "view == githubRepos",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  }
+}

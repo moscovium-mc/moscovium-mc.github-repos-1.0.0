@@ -4,6 +4,7 @@
   "description": "Browse GitHub repositories without leaving VS Code",
   "version": "1.0.0",
   "publisher": "moscovium-mc",
+  "repository": "https://github.com/moscovium-mc/moscovium-mc.github-repos-1.0.0",
   "engines": {
     "vscode": "^1.75.0"
   },

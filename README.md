@@ -47,9 +47,9 @@ VS Code:
 - Type any GitHub username and press Enter
 ### Web App:
 
--Enter a GitHub username and press Enter
--Use the search bar to filter repos
--Sort by recently updated, stars, or name
+- Enter a GitHub username and press Enter
+- Use the search bar to filter repos
+- Sort by recently updated, stars, or name
 
 ## How it works
 The extension uses the GitHub public API to fetch repository data:
